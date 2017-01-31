@@ -1,0 +1,23 @@
+<ion-view title="Trustmeter" id="page9">
+  <ion-content  scroll="false" padding="true" class="has-header" style="background: url(img/PO9lWmRA8wo6qpdI4QS3_trust_color.jpg) no-repeat center;background-size:cover;">
+    <ion-slides  options="{'loop': false}" slider="slider5" delegate-handle="slider5" id="trustmeter-slider5" style="width:100%;height:100%;">
+      <ion-slide-page ng-repeat="user in images" >
+        
+        <div >
+         <img ng-src="data:image/jpeg;base64,{{user.image}}" width="100%" height="100%">
+        </div>
+
+        <div class="button-bar">
+
+          <button class="button button-positive  button-block" ng-click="trustOrNot(user,true)">Trust</button>
+
+          <button class="button button-positive  button-block" ng-click="trustOrNot(user,false)">Don't Trust</button>
+
+        </div>
+
+          
+        
+      </ion-slide-page>
+    </ion-slides>
+  </ion-content>
+</ion-view>

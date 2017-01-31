@@ -1,0 +1,21 @@
+<ion-view title="No Point Table" id="page11">
+  <ion-content  scroll="true" padding="true" class="has-header" style="background: url(img/PO9lWmRA8wo6qpdI4QS3_trust_color.jpg) no-repeat center;background-size:cover;">
+ 
+            <div class="row" ng-repeat="item in items" >
+              <div class="col">
+                    <a  href=""> <img ng-src="data:image/jpeg;base64,{{item.image}}" width="100px" height="100px" ></a> 
+                </div>
+
+                <div class="col">
+                    
+                     <h3>{{item.trustpoint}} points</h3>     
+
+               </div>
+            
+            </div>             
+
+        </div>
+
+   
+  </ion-content>
+</ion-view>
